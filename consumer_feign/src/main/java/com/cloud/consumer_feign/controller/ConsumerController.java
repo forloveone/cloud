@@ -23,7 +23,7 @@ public class ConsumerController {
 
     @RequestMapping("/toHello2")
     public User hello2() {
-        return helloService.hello2("我们",22);
+        return helloService.hello2("我们", 22);
     }
 
     @RequestMapping("/toHello3")
@@ -43,7 +43,7 @@ public class ConsumerController {
         return helloService.hello4(user);
     }
 
-    public String fallback(){
+    public String fallback() {
         return "服务超时";
     }
 

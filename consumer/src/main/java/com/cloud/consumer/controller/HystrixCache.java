@@ -35,7 +35,8 @@ public class HystrixCache {
         return restTemplate.getForEntity("http://HELLO-SERVICE/hystrix", String.class).getBody();
     }
 }
-class User{
+
+class User {
     private String id;
 
     public String getId() {

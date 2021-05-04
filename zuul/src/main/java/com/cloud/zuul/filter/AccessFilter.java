@@ -54,7 +54,7 @@ public class AccessFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         logger.info("send {} request to {}", request.getMethod(), request.getRequestURI());
         String accessToken = request.getParameter("accessToken");
-        if (accessToken == null){
+        if (accessToken == null) {
             logger.info("access token is empty");
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);

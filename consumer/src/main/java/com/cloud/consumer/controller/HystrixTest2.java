@@ -17,7 +17,7 @@ public class HystrixTest2 {
         return restTemplate.getForEntity("http://HELLO-SERVICE/hystrix", String.class).getBody();
     }
 
-    public String fallBack2(){
+    public String fallBack2() {
         return "this is fallback2 call return";
     }
 }

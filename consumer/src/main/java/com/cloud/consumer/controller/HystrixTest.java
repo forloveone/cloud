@@ -17,7 +17,7 @@ public class HystrixTest {
         return restTemplate.getForEntity("http://HELLO-SERVICE/notThisUrl", String.class).getBody();
     }
 
-    public String fallBack(Throwable e){
-        return "this is fallback call return:"+e.getMessage();
+    public String fallBack(Throwable e) {
+        return "this is fallback call return:" + e.getMessage();
     }
 }

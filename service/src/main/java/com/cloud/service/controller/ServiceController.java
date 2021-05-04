@@ -40,20 +40,20 @@ public class ServiceController {
         return new User(name, age);
     }
 
-    @RequestMapping(value = "/hello3",method = RequestMethod.POST)
+    @RequestMapping(value = "/hello3", method = RequestMethod.POST)
     public String hello3(@RequestBody User user) throws InterruptedException {
         Thread.sleep(1000);
-        return "hello3 "+ user.getName() + user.getAge();
+        return "hello3 " + user.getName() + user.getAge();
     }
 
-    @RequestMapping(value = "/hello4",method = RequestMethod.POST)
+    @RequestMapping(value = "/hello4", method = RequestMethod.POST)
     public String hello4(@RequestBody User user) {
         throw new RuntimeException("服务端测试异常！");
     }
 
-    @RequestMapping(value = "/hello5",method = RequestMethod.POST)
+    @RequestMapping(value = "/hello5", method = RequestMethod.POST)
     public String hello5(@RequestBody User user) throws InterruptedException {
         Thread.sleep(6000);
-        return "hello3 "+ user.getName() + user.getAge();
+        return "hello3 " + user.getName() + user.getAge();
     }
 }

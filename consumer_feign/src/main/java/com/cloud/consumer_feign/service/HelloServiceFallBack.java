@@ -4,7 +4,7 @@ import com.cloud.consumer_feign.pojo.User;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloServiceFallBack implements HelloService{
+public class HelloServiceFallBack implements HelloService {
     @Override
     public String hello() {
         return "error hello";
@@ -17,7 +17,7 @@ public class HelloServiceFallBack implements HelloService{
 
     @Override
     public User hello2(String name, Integer age) {
-        return new User("unknow",0);
+        return new User("unknow", 0);
     }
 
     @Override

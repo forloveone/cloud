@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 通过Feign 我们只需定义服务绑定接口,以声明式的方法,优雅而简单的实现了服务调用
  */
-@FeignClient(value = "hello-service",fallback = HelloServiceFallBack.class)
+@FeignClient(value = "hello-service", fallback = HelloServiceFallBack.class)
 public interface HelloService {
 
     @RequestMapping("/hello")

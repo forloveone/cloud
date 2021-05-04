@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 public class HystrixDashboardApplication {
     /**
      * 只能监控单个的服务,需要监控多个需要配合turbine使用
+     *
      * @param args
      */
     //http://localhost:9004/hystrix 访问地址
